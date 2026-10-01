@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Practice Questions</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 50px 20px 30px;
+        }
+
+        .header h1 {
+            font-size: 38px;
+            margin-bottom: 12px;
+            color: #38bdf8;
+        }
+
+        .header p {
+            color: #cbd5e1;
+            font-size: 16px;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding-bottom: 50px;
+        }
+
+        /* Cards */
+        .questions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 18px;
+            padding: 25px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: #38bdf8;
+            box-shadow: 0 10px 30px rgba(56, 189, 248, 0.12);
+        }
+
+        .number {
+            display: inline-block;
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 7px 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.6;
+            min-height: 70px;
+        }
+
+        .topics {
+            margin-top: 15px;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        .btn {
+            width: 100%;
+            margin-top: 20px;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            background: #38bdf8;
+            color: #0f172a;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #7dd3fc;
+            transform: scale(1.02);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 25px;
+            color: #64748b;
+            border-top: 1px solid #1e293b;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .container {
+                width: 92%;
+            }
+
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h1>JavaScript Practice Lab</h1>
+
+        <p>
+            10 Beginner JavaScript Practice Questions
+        </p>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="questions">
+
+
+            <!-- Question 1 -->
+
+            <div class="card">
+
+                <span class="number">Question 01</span>
+
+                <h2>🛒 Online Shopping Checkout</h2>
+
+                <p>
+                    Create a shopping bill by entering
+                    product name, price and quantity.
+                </p>
+
+                <div class="topics">
+                    prompt() • variables • multiplication
+                </div>
+
+                <button class="btn" onclick="question1()">
+                    ▶ Perform Question
+                </button>
+
+            </div>
+
+
+            <!-- Question 2 -->
+
+            <div class="card">
+
+                <span class="number">Question 02</span>
+
+                <h2>🎓 Student Result System</h2>
+
+                <p>
+                    Calculate percentage and display
+                    grade and pass/fail result.
+                </p>
+
+                <div class="topics">
+                    if • else if • percentage
+                </div>
+
+                <button class="btn" onclick="question2()">
+                    ▶ Perform Question
+                </button>
+
+            </div>
+
+
+            <!-- Question 3 -->
+
+            <div class="card">
+
+                <span class="number">Question 03</span>
+
+                <h2>🏦 Bank Withdrawal</h2>
+
+                <p>
+                    Check account balance and process
+                    a withdrawal transaction.
+                </p>
+
+                <div class="topics">
+                    if/else • comparison • subtraction
+                </div>
+
+                <button class="btn" onclick="question3()">
+                    ▶ Perform Question
+                </button>
+
+            </div>
+
+
+            <!-- Question 4 -->
+
+            <div class="card">
+
+                <span class="number">Question 04</span>
+
+                <h2>🚗 Driving License</h2>
+
+                <p>
+                    Check whether a person is eligible
+                    for a driving license.
+                </p>
+
+                <div class="topics">
+                    prompt() • age • if/else
+                </div>
+
+                <button class="btn" onclick="question4()">
+                    ▶ Perform Question
+                </button>
+
+            </div>
+
+
+            <!-- Question 5 -->
+
+            <div class="card">
+
+                <span class="number">Question 05</span>
+
+                <h2>🏨 Hotel Booking</h2>
+
+                <p>
+                    Calculate the total hotel bill
+                    according to nights and price.
+                </p>
+
+                <div class="topics">
+                    multiplication • variables
+                </div>
+
+                <button class="btn" onclick="question5()">
+                    ▶ Perform Question
+                </button>
+
+            </div>
+
+
+            <!-- Question 6 -->
+
+            <div class="card">
+
+                <span class="number">Question 06</span>
+
+                <h2>🔐 Employee Login</h2>
+
+                <p>
+                    Verify employee username and
+                    password using conditions.
+                </p>
+
+                <div class="topics">
+                    && • comparison • if/else
+                </div>
+
+                <button class="btn" onclick="question6()">
+                    ▶ Perform Question
+                </button>
+
+            </div>
+
+
+            <!-- Question 7 -->
+
+            <div class="card">
+
+                <span class="number">Question 07</span>
+
+                <h2>📦 Delivery Charges</h2>
+
+                <p>
+                    Calculate delivery charges based
+                    on the order amount.
+                </p>
+
+                <div class="topics">
+                    if • else if • operators
+                </div>
+
+                <button class="btn" onclick="question7()">
+                    ▶ Perform Question
+                </button>
+
+            </div>
+
+
+            <!-- Question 8 -->
+
+            <div class="card">
+
+                <span class="number">Question 08</span>
+
+                <h2>🏫 School Attendance</h2>
+
+                <p>
+                    Display 10 student names with
+                    serial numbers using a loop.
+                </p>
+
+                <div class="topics">
+                    array • for loop • length
+                </div>
+
+                <button class="btn" onclick="question8()">
+                    ▶ Perform Question
+                </button>
+
+            </div>
+
+
+            <!-- Question 9 -->
+
+            <div class="card">
+
+                <span class="number">Question 09</span>
+
+                <h2>📱 Mobile Inventory</h2>
+
+                <p>
+                    Add and remove mobiles from an
+                    array and display the inventory.
+                </p>
+
+                <div class="topics">
+                    push() • splice() • for • length
+                </div>
+
+                <button class="btn" onclick="question9()">
+                    ▶ Perform Question
+                </button>
+
+            </div>
+
+
+            <!-- Question 10 -->
+
+            <div class="card">
+
+                <span class="number">Question 10</span>
+
+                <h2>🏢 Employee Salary</h2>
+
+                <p>
+                    Calculate employee bonus and
+                    final salary according to basic salary.
+                </p>
+
+                <div class="topics">
+                    if/else • percentage • calculation
+                </div>
+
+                <button class="btn" onclick="question10()">
+                    ▶ Perform Question
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+
+        JavaScript Practice Lab • 10 Questions
+
+    </div>
+
+
+<script>
+
+
+// =====================================================
+// QUESTION 1
+// ONLINE SHOPPING CHECKOUT
+// =====================================================
+
+function question1() {
+
+    var productName = prompt("Enter Product Name:");
+
+    var price = Number(
+        prompt("Enter Product Price:")
+    );
+
+    var quantity = Number(
+        prompt("Enter Quantity:")
+    );
+
+    var total = price * quantity;
+
+
+    document.write(
+        "<h1>🛒 SHOPPING BILL</h1>"
+    );
+
+    document.write(
+        "Product: " + productName + "<br><br>"
+    );
+
+    document.write(
+        "Price: $" + price + "<br><br>"
+    );
+
+    document.write(
+        "Quantity: " + quantity + "<br><br>"
+    );
+
+    document.write(
+        "Total: $" + total + "<br><br>"
+    );
+
+    document.write(
+        "================================"
+    );
+
+    document.write(
+        "<br><br><button onclick='location.reload()'>⬅ Back to Questions</button>"
+    );
+}
+
+
+
+// =====================================================
+// QUESTION 2
+// STUDENT RESULT
+// =====================================================
+
+function question2() {
+
+    var studentName = prompt(
+        "Enter Student Name:"
+    );
+
+    var totalMarks = Number(
+        prompt("Enter Total Marks:")
+    );
+
+    var obtainedMarks = Number(
+        prompt("Enter Obtained Marks:")
+    );
+
+
+    var percentage =
+        (obtainedMarks / totalMarks) * 100;
+
+
+    var grade;
+
+
+    if (percentage >= 80) {
+
+        grade = "A";
+
+    } else if (percentage >= 70) {
+
+        grade = "B";
+
+    } else if (percentage >= 60) {
+
+        grade = "C";
+
+    } else if (percentage >= 50) {
+
+        grade = "D";
+
+    } else {
+
+        grade = "F";
+
+    }
+
+
+    document.write(
+        "<h1>🎓 STUDENT RESULT</h1>"
+    );
+
+    document.write(
+        "Student: " + studentName + "<br><br>"
+    );
+
+    document.write(
+        "Percentage: " + percentage + "%<br><br>"
+    );
+
+    document.write(
+        "Grade: " + grade + "<br><br>"
+    );
+
+
+    if (percentage >= 50) {
+
+        document.write(
+            "Result: Pass<br><br>"
+        );
+
+    } else {
+
+        document.write(
+            "Result: Fail<br><br>"
+        );
+
+    }
+
+
+    document.write(
+        "================================"
+    );
+
+    document.write(
+        "<br><br><button onclick='location.reload()'>⬅ Back to Questions</button>"
+    );
+}
+
+
+
+// =====================================================
+// QUESTION 3
+// BANK WITHDRAWAL
+// =====================================================
+
+function question3() {
+
+    var accountHolder = prompt(
+        "Enter Account Holder Name:"
+    );
+
+    var balance = Number(
+        prompt("Enter Current Balance:")
+    );
+
+    var withdrawal = Number(
+        prompt("Enter Withdrawal Amount:")
+    );
+
+
+    document.write(
+        "<h1>🏦 ATM TRANSACTION</h1>"
+    );
+
+    document.write(
+        "Account Holder: " +
+        accountHolder +
+        "<br><br>"
+    );
+
+    document.write(
+        "Current Balance: $" +
+        balance +
+        "<br><br>"
+    );
+
+    document.write(
+        "Withdrawal: $" +
+        withdrawal +
+        "<br><br>"
+    );
+
+
+    if (withdrawal <= balance) {
+
+        var remainingBalance =
+            balance - withdrawal;
+
+
+        document.write(
+            "Transaction: Successful<br><br>"
+        );
+
+        document.write(
+            "Remaining Balance: $" +
+            remainingBalance +
+            "<br><br>"
+        );
+
+    } else {
+
+        document.write(
+            "Transaction Failed<br><br>"
+        );
+
+        document.write(
+            "Reason: Insufficient Balance<br><br>"
+        );
+
+    }
+
+
+    document.write(
+        "================================"
+    );
+
+    document.write(
+        "<br><br><button onclick='location.reload()'>⬅ Back to Questions</button>"
+    );
+}
+
+
+
+// =====================================================
+// QUESTION 4
+// DRIVING LICENSE
+// =====================================================
+
+function question4() {
+
+    var name = prompt(
+        "Enter Your Name:"
+    );
+
+    var age = Number(
+        prompt("Enter Your Age:")
+    );
+
+
+    document.write(
+        "<h1>🚗 DRIVING LICENSE</h1>"
+    );
+
+    document.write(
+        "Name: " + name + "<br><br>"
+    );
+
+    document.write(
+        "Age: " + age + "<br><br>"
+    );
+
+
+    if (age >= 18) {
+
+        document.write(
+            "Status: Eligible for Driving License<br><br>"
+        );
+
+    } else {
+
+        document.write(
+            "Status: Not Eligible<br><br>"
+        );
+
+        document.write(
+            "Reason: Minimum age is 18<br><br>"
+        );
+
+    }
+
+
+    document.write(
+        "================================"
+    );
+
+    document.write(
+        "<br><br><button onclick='location.reload()'>⬅ Back to Questions</button>"
+    );
+}
+
+
+
+// =====================================================
+// QUESTION 5
+// HOTEL BOOKING
+// =====================================================
+
+function question5() {
+
+    var customerName = prompt(
+        "Enter Customer Name:"
+    );
+
+    var nights = Number(
+        prompt("Enter Number of Nights:")
+    );
+
+    var pricePerNight = Number(
+        prompt("Enter Price Per Night:")
+    );
+
+
+    var totalAmount =
+        nights * pricePerNight;
+
+
+    document.write(
+        "<h1>🏨 HOTEL BOOKING</h1>"
+    );
+
+    document.write(
+        "Guest: " +
+        customerName +
+        "<br><br>"
+    );
+
+    document.write(
+        "Nights: " +
+        nights +
+        "<br><br>"
+    );
+
+    document.write(
+        "Price Per Night: $" +
+        pricePerNight +
+        "<br><br>"
+    );
+
+    document.write(
+        "Total Amount: $" +
+        totalAmount +
+        "<br><br>"
+    );
+
+    document.write(
+        "================================"
+    );
+
+    document.write(
+        "<br><br><button onclick='location.reload()'>⬅ Back to Questions</button>"
+    );
+}
+
+
+
+// =====================================================
+// QUESTION 6
+// EMPLOYEE LOGIN
+// =====================================================
+
+function question6() {
+
+    var correctUsername = "admin";
+
+    var correctPassword = "12345";
+
+
+    var username = prompt(
+        "Enter Username:"
+    );
+
+    var password = prompt(
+        "Enter Password:"
+    );
+
+
+    document.write(
+        "<h1>🔐 EMPLOYEE LOGIN</h1>"
+    );
+
+
+    if (
+        username == correctUsername &&
+        password == correctPassword
+    ) {
+
+        document.write(
+            "Welcome to Employee Dashboard<br><br>"
+        );
+
+        document.write(
+            "Login Status: Successful<br><br>"
+        );
+
+    } else {
+
+        document.write(
+            "Login Failed<br><br>"
+        );
+
+        document.write(
+            "Invalid Username or Password<br><br>"
+        );
+
+    }
+
+
+    document.write(
+        "================================"
+    );
+
+    document.write(
+        "<br><br><button onclick='location.reload()'>⬅ Back to Questions</button>"
+    );
+}
+
+
+
+// =====================================================
+// QUESTION 7
+// DELIVERY CHARGES
+// =====================================================
+
+function question7() {
+
+    var orderAmount = Number(
+        prompt("Enter Order Amount:")
+    );
+
+
+    var deliveryCharges;
+
+
+    if (orderAmount >= 100) {
+
+        deliveryCharges = 0;
+
+    } else if (orderAmount >= 50) {
+
+        deliveryCharges = 5;
+
+    } else {
+
+        deliveryCharges = 10;
+
+    }
+
+
+    var finalAmount =
+        orderAmount + deliveryCharges;
+
+
+    document.write(
+        "<h1>📦 DELIVERY BILL</h1>"
+    );
+
+    document.write(
+        "Order Amount: $" +
+        orderAmount +
+        "<br><br>"
+    );
+
+    document.write(
+        "Delivery Charges: $" +
+        deliveryCharges +
+        "<br><br>"
+    );
+
+    document.write(
+        "Final Amount: $" +
+        finalAmount +
+        "<br><br>"
+    );
+
+
+    if (deliveryCharges == 0) {
+
+        document.write(
+            "Delivery: FREE<br><br>"
+        );
+
+    }
+
+
+    document.write(
+        "================================"
+    );
+
+    document.write(
+        "<br><br><button onclick='location.reload()'>⬅ Back to Questions</button>"
+    );
+}
+
+
+
+// =====================================================
+// QUESTION 8
+// SCHOOL ATTENDANCE
+// =====================================================
+
+function question8() {
+
+    var students = [
+
+        "Ahmed",
+        "Muhammad",
+        "Sara",
+        "Zainab",
+        "Ali",
+        "Hassan",
+        "Ayesha",
+        "Usman",
+        "Fatima",
+        "Zain"
+
+    ];
+
+
+    document.write(
+        "<h1>🏫 CLASS ATTENDANCE</h1><br>"
+    );
+
+
+    for (
+        var i = 0;
+        i < students.length;
+        i++
+    ) {
+
+        document.write(
+            (i + 1) +
+            ". " +
+            students[i] +
+            "<br><br>"
+        );
+
+    }
+
+
+    document.write(
+        "Total Students: " +
+        students.length +
+        "<br><br>"
+    );
+
+
+    document.write(
+        "================================"
+    );
+
+    document.write(
+        "<br><br><button onclick='location.reload()'>⬅ Back to Questions</button>"
+    );
+}
+
+
+
+// =====================================================
+// QUESTION 9
+// MOBILE INVENTORY
+// =====================================================
+
+function question9() {
+
+    var mobiles = [
+
+        "iPhone 15",
+        "Samsung S24",
+        "Google Pixel 9",
+        "OnePlus 12",
+        "Xiaomi 14"
+
+    ];
+
+
+    // Add new mobile
+
+    mobiles.push("Vivo V30");
+
+
+    // Remove one mobile
+
+    mobiles.splice(2, 1);
+
+
+    document.write(
+        "<h1>📱 MOBILE INVENTORY</h1><br>"
+    );
+
+
+    for (
+        var i = 0;
+        i < mobiles.length;
+        i++
+    ) {
+
+        document.write(
+            (i + 1) +
+            ". " +
+            mobiles[i] +
+            "<br><br>"
+        );
+
+    }
+
+
+    document.write(
+        "Total Mobiles: " +
+        mobiles.length +
+        "<br><br>"
+    );
+
+
+    document.write(
+        "================================"
+    );
+
+    document.write(
+        "<br><br><button onclick='location.reload()'>⬅ Back to Questions</button>"
+    );
+}
+
+
+
+// =====================================================
+// QUESTION 10
+// EMPLOYEE SALARY
+// =====================================================
+
+function question10() {
+
+    var employeeName = prompt(
+        "Enter Employee Name:"
+    );
+
+    var basicSalary = Number(
+        prompt("Enter Basic Salary:")
+    );
+
+
+    var bonus;
+
+
+    if (basicSalary >= 5000) {
+
+        bonus =
+            basicSalary * 20 / 100;
+
+    } else if (basicSalary >= 3000) {
+
+        bonus =
+            basicSalary * 10 / 100;
+
+    } else {
+
+        bonus =
+            basicSalary * 5 / 100;
+
+    }
+
+
+    var finalSalary =
+        basicSalary + bonus;
+
+
+    document.write(
+        "<h1>🏢 SALARY SLIP</h1>"
+    );
+
+    document.write(
+        "Employee: " +
+        employeeName +
+        "<br><br>"
+    );
+
+    document.write(
+        "Basic Salary: $" +
+        basicSalary +
+        "<br><br>"
+    );
+
+    document.write(
+        "Bonus: $" +
+        bonus +
+        "<br><br>"
+    );
+
+    document.write(
+        "Final Salary: $" +
+        finalSalary +
+        "<br><br>"
+    );
+
+
+    document.write(
+        "================================"
+    );
+
+    document.write(
+        "<br><br><button onclick='location.reload()'>⬅ Back to Questions</button>"
+    );
+}
+
+
+</script>
+
+</body>
+</html>
